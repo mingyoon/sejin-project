@@ -575,8 +575,11 @@ textarea {
     line-height: 1.4;
 }
 .produce-line .section.right {
-    padding-left: 7.6%;
     box-sizing: border-box;
+    text-align: right;
+}
+.produce-line .section.right ul {
+    display: inline-block;
 }
 .produce-line .section.right li {
     margin-bottom:72px;
@@ -598,8 +601,8 @@ textarea {
 }
 .produce-line .section.right .size {
     display: inline-block;
-    width: 60%;
     margin-left: 56px;
+    text-align: left;
 }
 .produce-line .section.right .size h5 {
     font-size: 16px;
