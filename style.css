@@ -476,10 +476,10 @@ textarea {
     position: relative;
 }
 .main-img .down-btn img {
-    width: 100px;
+    width: 120px;
     position: absolute;
-    left: 13%;
-    top: -40px;
+    left: 12.2%;
+    top: -50px;
     z-index: 20;
 }
 .slider {
@@ -496,6 +496,7 @@ textarea {
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .slider .slide-img.top {
     z-index: 5;
@@ -573,6 +574,7 @@ textarea {
     opacity: 0.8;
     margin-top: 20px;
     line-height: 1.4;
+    word-break: keep-all;
 }
 .produce-line .section.right {
     box-sizing: border-box;
@@ -621,12 +623,13 @@ textarea {
 .certification {
     background-color: #0c0c0c;
     color: #fff;
+    position: relative;
 }
 .certification .certi-item {
     margin-top: 200px;
 }
 .certification .certi-item li {
-    width: 18%;
+    width: 18.5%;
     display: inline-block;
     margin-right: 1.3%;
     padding-top: 33px;
@@ -645,6 +648,16 @@ textarea {
 .certification .certi-item p {
     line-height: 1.25;
     font-size: 24px;
+}
+.line-btn {
+    border: 1px solid #fff;
+    padding: 19px 24px;
+    font-size: 16px;
+}
+.certification .line-btn {
+    position: absolute;
+    right: 13%;
+    top: 200px;
 }
 .product {
     width: 100%;
@@ -706,4 +719,102 @@ textarea {
 }
 .product .move-btn a:hover {
     background-color: #3e3e3e;
+}
+
+.partners {
+    color: #fff;
+    background-color: #0053ff;
+}
+.partners .partners-logo {
+    margin-top: 140px;
+}
+.partners .partners-logo .partner {
+    display: inline-block;
+    width: 16%;
+    margin-right: 4%;
+}
+.partners .partners-logo .partner:last-child {
+    margin-right: 0;
+}
+.partners .partners-logo .partner img {
+/*    height: 2.6vh;*/
+    width: 90%;
+}
+.product.company .move-btn {
+    display: none;
+}
+.product.company .product-slider li {
+    width: 400px;
+    margin-right: 12px;
+}
+
+.product.company .product-slider li:nth-child(1) {
+    background-image: url(view01.png);
+}
+.product.company .product-slider li:nth-child(2) {
+    background-image: url(view02.png);
+}
+.product.company .product-slider li:nth-child(3) {
+    background-image: url(view03.png);
+}
+.product.company .product-slider li:nth-child(4) {
+    background-image: url(view04.png);
+}
+
+.more-info {
+    background-color: #0c0c0c;
+    color: #fff;
+    text-align: center;
+}
+.more-info .contents-padding {
+    padding: 170px 0 175px;
+}
+.blue-btn {
+    padding: 23px 66px;
+    background-color: #0053ff;
+    margin-top: 40px;
+    display: inline-block;
+    font-size: 16px;
+}
+.footer {
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer .contents-padding {
+    padding: 56px 0;
+}
+.footer .left {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer .right {
+    width: 58%;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer .left img {
+    height: 40px;
+}
+.footer .right .f-txt {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.footer .right a.f-txt {
+    margin-bottom: 48px;
+    display: inline-block;
+}
+.footer .right .f-txt .indent {
+    text-indent: 7px;
+    display: inline-block;
+}
+.footer .right .f-txt.copy {
+    margin-top: 12px;
+}
+.mobile-btn {
+    display: none;
+}
+.m-br {
+    display: none;
 }
