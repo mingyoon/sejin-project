@@ -279,7 +279,7 @@
                 var sliderChildren = $(".product #productSlider li").length;
                 var imgMarginRight = parseFloat($("#productSlider li").css("marginRight"));
                 
-                $(".product-nums.nums li").each(function () {
+                $("#product .product-nums.nums li").each(function () {
                     var numIndex = $(this).index();
                     var imgWidth = $(".pro-box0").width();
                     var containerPadding = parseFloat($(".container").css("paddingLeft"));
@@ -326,7 +326,7 @@
                     const companyMoveWidth = parseFloat($(".view-box0").width()+ imgMarginRight)*numIndex - parseFloat($(".slider-container").css("paddingLeft"));
                     
                     $(this).click(function () {
-                        currentIndex = numIndex;
+                        companyIndex = numIndex;
                         $(this).siblings().removeClass("actived");
                         $(this).addClass("actived");
                         $(".product.company #companySlider").animate({ "left" : -`${companyMoveWidth}`+"px" }, 1000);
