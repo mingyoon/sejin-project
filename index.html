@@ -3,6 +3,13 @@
     <head>
         <title>Challenge for New Value Creation, SEJIN E&#38;T</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+        
         <script
           src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -27,12 +34,13 @@
                 <span></span>
             </a>
             <ul class="menu-open roboto">
-                <li class="menu-items">Intro</li>
-                <li class="menu-items">Produce Line</li>
-                <li class="menu-items">Certification</li>
-                <li class="menu-items">Product</li>
-                <li class="menu-items">Partners</li>
-                <li class="menu-items">Company View</li>
+                <li class="menu-items"><a href="#intro" uk-scroll>Intro</a></li>
+                <li class="menu-items"><a href="#produce" uk-scroll>Produce Line</a></li>
+                <li class="menu-items"><a href="#certi" uk-scroll>Certification</a></li>
+                <li class="menu-items"><a href="#product" uk-scroll>Product</a></li>
+                <li class="menu-items"><a href="#partners" uk-scroll>Partners</a></li>
+                <li class="menu-items"><a href="#company" uk-scroll>Company View</a></li>
+                <li class="menu-items"><a href="#more" uk-scroll>More Info</a></li>
             </ul>
         </div>
         
@@ -51,12 +59,12 @@
         </div>
         <div class="main-img">
             <div class="container">
-                <a class="down-btn">
+                <a class="down-btn" href="#intro" uk-scroll>
                     <img class="pc-btn" src="down-btn.png">
                     <img class="mobile-btn" src="down-btn-mobile.png">
                 </a>
             </div>
-            <div class="slider">
+            <div class="slider" id="main-img">
                 <div class="slide-img box0"></div>
                 <div class="slide-img box1"></div>
                 <div class="slide-img box2"></div>
@@ -68,7 +76,7 @@
             </ul>
         </div>
         
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="contents-padding">
                     <p class="intro-text noto-sans">세진E&#38;T는 자동차 3사(현대, GMK, RSM)에 품질승인을 받아 자동차 부품을 전착하고 <br class="p-br">물류업을 하는 전착 전문업체입니다. 국내뿐 아니라 글로벌로 진출하고자 하는 열정과 <br class="p-br">실력을 가지고 도전하고 있습니다. 금속표면처리가 하지 못하는 기능성 도료 및 <br class="p-br">전기차 부품을 연구 개발하여 새로운 시대를 개척해 나가겠습니다.</p>
@@ -78,7 +86,7 @@
         
         <div class="middle-img"></div>
         
-        <div class="produce-line">
+        <div class="produce-line" id="produce">
             <div class="container">
                 <div class="contents-padding">
                     <div class="section left">
@@ -122,7 +130,7 @@
             </div>
         </div>
         
-        <div class="certification">
+        <div class="certification" id="certi">
             <div class="container">
                 <div class="contents-padding">
                     <h3 class="section-title roboto">Certification</h3>
@@ -154,34 +162,34 @@
             </div>
         </div>
         
-        <div class="product">
+        <div class="product" id="product">
             <div class="contents-padding">
                 <div class="container">
                     <h3 class="section-title roboto">Product</h3>
                     <p class="section-txt noto-sans">현대차 아이오닉에 납품하는 <br class="p-br">PHEV</p>
-                    <ul class="nums roboto">
+                    <ul class="product-nums nums roboto">
                         <li class="0 actived">01</li>
                         <li class="1">02</li>
                         <li class="2">03</li>
+                        <li class="3">04</li>
                     </ul>
                     <div class="move-btn">
-                        <a id="minus">
+                        <a class="minus">
                             <img src="arrow-white-left.svg">
                         </a>
-                        <a id="plus">
+                        <a class="plus">
                             <img src="arrow-white-right.svg">
                         </a>
                     </div>
                 </div>
-                <ul class="product-slider">
-                    <li class="pro-box0"></li>
-                    <li class="pro-box1"></li>
-                    <li class="pro-box2"></li>
+                <div class="slider-container"></div>
+                <ul class="product-slider" id="productSlider">
+                    <li class="pro-box0"></li><li class="pro-box1"></li><li class="pro-box2"></li><li class="pro-box3"></li>
                 </ul>
             </div>
         </div>
         
-        <div class="partners">
+        <div class="partners" id="partners">
             <div class="contents-padding">
                 <div class="container">
                     <h3 class="section-title roboto">Partners</h3>
@@ -197,7 +205,7 @@
             </div>
         </div>
         
-        <div class="product company">
+        <div class="product company" id="company">
             <div class="contents-padding">
                 <div class="container">
                     <h3 class="section-title roboto">Company View</h3>
@@ -206,26 +214,25 @@
                         <li class="0 actived">01</li>
                         <li class="1">02</li>
                         <li class="2">03</li>
+                        <li class="3">04</li>
                     </ul>
                     <div class="move-btn">
-                        <a id="minus">
+                        <a class="minus">
                             <img src="arrow-white-left.svg">
                         </a>
-                        <a id="plus">
+                        <a class="plus">
                             <img src="arrow-white-right.svg">
                         </a>
                     </div>
                 </div>
-                <ul class="product-slider">
-                    <li class="view-box0"></li>
-                    <li class="view-box1"></li>
-                    <li class="view-box2"></li>
-                    <li class="view-box3"></li>
+                <div class="slider-container"></div>
+                <ul class="product-slider" id="companySlider">
+                    <li class="view-box0"></li><li class="view-box1"></li><li class="view-box2"></li><li class="view-box3"></li>
                 </ul>
             </div>
         </div>
         
-        <div class="more-info">
+        <div class="more-info" id="more">
             <div class="container">
                 <div class="contents-padding">
                     <p class="section-txt noto-sans">보다 세부적인 내용은 <br>세진E&#38;T의 공정제안서를 <br>다운받으세요</p>
@@ -268,22 +275,86 @@
                     $(".header").toggleClass("open");
                 });
                 
-                $(".nums li").each(function () {
+                var currentIndex = 0;
+                var sliderChildren = $(".product #productSlider li").length;
+                var imgMarginRight = parseFloat($("#productSlider li").css("marginRight"));
+                
+                $(".product-nums.nums li").each(function () {
+                    var numIndex = $(this).index();
+                    var imgWidth = $(".pro-box0").width();
+                    var containerPadding = parseFloat($(".container").css("paddingLeft"));
+                    const moveWidth = parseFloat($(".pro-box0").width()+ imgMarginRight )*numIndex - parseFloat($(".slider-container").css("paddingLeft"));
+                    
                     $(this).click(function () {
-                        var numIndex = $(this).attr("class");
-                        $(this).addClass("actived");
+                        currentIndex = numIndex;
                         $(this).siblings().removeClass("actived");
-                        
+                        $(this).addClass("actived");
+                        $(".product #productSlider").animate({ "left" : -`${moveWidth}`+"px" }, 1000);
                     });
                 });
-                $(".view-nums li").each(function () {
+                
+                $("#product .plus").click(function(){
+                    if (currentIndex >= sliderChildren - 1) {
+                        return false;
+                    }
+                    currentIndex++;
+                    var plusWidth = parseFloat($(".pro-box0").width()+ imgMarginRight)*currentIndex - parseFloat($(".slider-container").css("paddingLeft"));
+                    $(".product-nums.nums li").siblings().removeClass("actived");
+                    $(".product-nums.nums li").eq(currentIndex).addClass("actived");
+
+                    $(".product #productSlider").animate({ "left" : -`${plusWidth}`+"px" }, 1000); 
+                });
+                $("#product .minus").click(function(){
+                    if (currentIndex <= 0) {
+                        return false;
+                    }
+                    currentIndex--;
+                    var plusWidth = parseFloat($(".pro-box0").width()+ imgMarginRight)*currentIndex - parseFloat($(".slider-container").css("paddingLeft"));
+                    $(".product-nums.nums li").siblings().removeClass("actived");
+                    $(".product-nums.nums li").eq(currentIndex).addClass("actived");
+                    $(".product #productSlider").animate({ "left" : -`${plusWidth}`+"px" }, 1000); 
+                });
+                
+                var companyIndex = 0;
+                var companySliderChildren = $(".product.company #companySlider li").length;
+                
+                $("#company .view-nums li").each(function () {
+                    var numIndex = $(this).index();
+                    var imgWidth = $(".view-box0").width();
+                    var containerPadding = parseFloat($(".slider-container").css("paddingLeft"));
+                    var imgMarginRight = parseFloat($("#companySlider li").css("marginRight"));
+                    const companyMoveWidth = parseFloat($(".view-box0").width()+ imgMarginRight)*numIndex - parseFloat($(".slider-container").css("paddingLeft"));
+                    
                     $(this).click(function () {
-                        var numIndex = $(this).attr("class");
-                        $(this).addClass("actived");
+                        currentIndex = numIndex;
                         $(this).siblings().removeClass("actived");
-                        
+                        $(this).addClass("actived");
+                        $(".product.company #companySlider").animate({ "left" : -`${companyMoveWidth}`+"px" }, 1000);
                     });
                 });
+                
+                $("#company .plus").click(function(){
+                    if (companyIndex >= companySliderChildren - 1) {
+                        return false;
+                    }
+                    companyIndex++;
+                    var plusWidth = parseFloat($(".view-box0").width()+ imgMarginRight)*companyIndex - parseFloat($(".slider-container").css("paddingLeft"));
+                    $(".product.company .view-nums li").siblings().removeClass("actived");
+                    $(".product.company .view-nums li").eq(companyIndex).addClass("actived");
+
+                    $(".product.company #companySlider").animate({ "left" : -`${plusWidth}`+"px" }, 1000); 
+                });
+                $("#company .minus").click(function(){
+                    if (companyIndex <= 0) {
+                        return false;
+                    }
+                    companyIndex--;
+                    var plusWidth = parseFloat($(".view-box0").width()+ imgMarginRight)*companyIndex - parseFloat($(".slider-container").css("paddingLeft"));
+                    $(".product.company .view-nums li").siblings().removeClass("actived");
+                    $(".product.company .view-nums li").eq(companyIndex).addClass("actived");
+                    $(".product.company #companySlider").animate({ "left" : -`${plusWidth}`+"px" }, 1000); 
+                });
+                
             });
         </script>
     </body>
