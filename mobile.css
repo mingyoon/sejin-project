@@ -10,16 +10,17 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .header {
         padding: 19px 20px;
+        height: 78px;
     }
     .menu {
         right: 20px;
-        top: 19px;
+        top: 24px;
     }
     .header .logo {
         width: 100px;
     }
-    .header .menu-open {
-        padding-top: 30%;
+    .header.open .menu-open {
+        padding-top: 20%;
     }
     .container {
         padding: 0 8.5%;
