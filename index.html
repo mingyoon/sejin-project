@@ -274,6 +274,9 @@
                 $(".menu").click(function(){
                     $(".header").toggleClass("open");
                 });
+                $(".menu-open li").click(function(){
+                    $(".header").removeClass("open");
+                });
                 
                 var currentIndex = 0;
                 var sliderChildren = $(".product #productSlider li").length;
