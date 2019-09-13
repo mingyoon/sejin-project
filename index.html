@@ -21,9 +21,10 @@
         
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400|Roboto:400,700&display=swap" rel="stylesheet">
         
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="mobile.css">
-        <script src="custom.js"></script>
     </head>
     <body>
         <div class="header">
@@ -69,6 +70,7 @@
                 <div class="slide-img box1"></div>
                 <div class="slide-img box2"></div>
             </div>
+<!--            <div id="test" class="box"></div>-->
             <ul class="dots">
                 <li class="0 selected"></li>
                 <li class="1"></li>
@@ -182,10 +184,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="slider-container"></div>
-                <ul class="product-slider" id="productSlider">
-                    <li class="pro-box0"></li><li class="pro-box1"></li><li class="pro-box2"></li><li class="pro-box3"></li>
-                </ul>
+                <div class="slider-container">
+                    <ul class="product-slider" id="productSlider">
+                        <li class="pro-box0"></li><li class="pro-box1"></li><li class="pro-box2"></li><li class="pro-box3"></li>
+                    </ul>
+                </div>
             </div>
         </div>
         
@@ -225,10 +228,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="slider-container"></div>
-                <ul class="product-slider" id="companySlider">
-                    <li class="view-box0"></li><li class="view-box1"></li><li class="view-box2"></li><li class="view-box3"></li>
-                </ul>
+                <div class="slider-container">
+                    <ul class="product-slider" id="companySlider">
+                        <li class="view-box0"></li><li class="view-box1"></li><li class="view-box2"></li><li class="view-box3"></li>
+                    </ul>
+                </div>
             </div>
         </div>
         
@@ -258,10 +262,13 @@
         </div>
         
         <script>
-            $(document).ready(function(){
+                var mainIndex = 0;
+                var mainChildren = $(".slider .slide-img").length;
+                
                 $(".dots li").each(function () {
                     $(this).click(function () {
                         var dotIndex = $(this).attr("class");
+                        mainIndex = dotIndex;
                         $(this).addClass("selected");
                         $(this).siblings().removeClass("selected");
                         $(".box"+dotIndex).each(function(){
@@ -270,6 +277,23 @@
                         });
                     });
                 });
+            
+                $(function() {
+                  $("#main-img").swipe( {
+                    //Generic swipe handler for all directions
+                    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                        if (direction == right){
+                            $(".slide-img").animate({opacity : "0"}, 1000);
+                        };
+//                      $(".slide-img").each(function(){
+//                          $(".box"+mainIndex).animate({opacity:"1"}, 1000);
+//                          $(".box"+mainIndex).siblings().animate({opacity:"0"}, 1000);
+//                      });
+                    },
+                      threshold:0
+                  });
+                });
+                
                 
                 $(".menu").click(function(){
                     $(".header").toggleClass("open");
@@ -357,8 +381,7 @@
                     $(".product.company .view-nums li").eq(companyIndex).addClass("actived");
                     $(".product.company #companySlider").animate({ "left" : -`${plusWidth}`+"px" }, 1000); 
                 });
-                
-            });
+
         </script>
     </body>
 </html>

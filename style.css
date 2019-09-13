@@ -471,8 +471,8 @@ textarea {
 }
 
 .container {
-/*    max-width: 1240px;*/
-    padding: 0 13%;
+    max-width: 1240px;
+/*    padding: 0 13%;*/
     margin: 0 auto;
 }
 .title {
@@ -494,7 +494,7 @@ textarea {
 .main-img .down-btn img {
     width: 120px;
     position: absolute;
-    left: 12.2%;
+    left: 0;
     top: -50px;
     z-index: 20;
 }
@@ -683,18 +683,16 @@ textarea {
     position: relative;
 }
 .product .slider-container {
-    padding: 0 13%;
+    width: 1240px;
+    margin: 0 auto;
 }
-
 .product .product-slider {
     margin-top: 70px;
     width: 1000vw;
     position: relative;
-    left: 13%;
 }
 .product .product-slider li {
-/*    width: 1080px;*/
-    width: 74vw;
+    width: 1240px;
     height: 600px;
     display: inline-block;
     margin-right: 20px;
@@ -715,7 +713,7 @@ textarea {
 }
 .product .nums {
     position: absolute;
-    right: 13%;
+    right: 0;
     top: 0;
 }
 .product .nums li {
@@ -731,7 +729,7 @@ textarea {
 }
 .product .move-btn {
     position: absolute;
-    right: 13%;
+    right: 0;
     bottom: -80px;
     z-index: 20;
 }

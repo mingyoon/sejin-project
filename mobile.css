@@ -1,9 +1,212 @@
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1300px){
+    .container {
+        padding: 0 8.5%;
+    }
+    .main-img .down-btn img {
+        left: 8.5%;
+    }
+    
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .header {
+        padding: 19px 20px;
+        height: 78px;
+    }
+    .menu {
+        right: 20px;
+        top: 24px;
+    }
+    .header .logo {
+        width: 100px;
+    }
+    .header.open .menu-open {
+        padding-top: 20%;
+    }
+    .header .menu-open .menu-items {
+        font-size: 22px;
+        margin-bottom: 34px;
+    }
+    .container {
+        padding: 0 8.5%;
+    }
+    .contents-padding {
+        padding: 90px 0;
+    }
+    .title h1 {
+        font-size: 28px;
+        margin-top: 126px;
+        margin-bottom: 60px;
+    }
+    .main-img .down-btn img {
+        left: 4%;
+        top: -32px;
+        width: 92px;
+    }
+    .p-br {
+        display: none;
+    }
+    .m-br {
+        display: block;
+    }
     .pc-btn {
         display: none;
     }
     .mobile-btn {
         display: inline-block;
+    }
+    .slider {
+        height: 480px;
+    }
+    .main-img .slider .slide-img {
+        height: 480px;
+        background-position: -200px 0px;
+    }
+    .dots {
+        width: 100%;
+        top: -44px;
+    }
+    .intro .intro-text {
+        margin: 0;
+        width: auto;
+        font-size: 16px;
+        color: #666666;
+    }
+    .middle-img {
+        height: 240px;
+    }
+    .section-title {
+        font-size: 16px;
+        color: #0c0c0c;
+    }
+    .section-txt {
+        font-size: 24px;
+    }
+    .produce-line .section {
+        width: 100%;
+    }
+    .produce-line .section.left {
+        padding: 0;
+        margin-bottom: 80px;
+    }
+    .produce-line .section.right {
+        text-align: left;
+    }
+    .produce-line .section.right .size {
+        margin-left: 0;
+    }
+    .produce-line .section.right span {
+        margin-bottom: 24px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+    }
+    .certification {
+        position: relative;
+    }
+    .certification .line-btn {
+        position: inherit;
+        display: inline-block;
+        width: 100%;
+        padding: 19px 0;
+        text-align: center;
+        margin-top: 56px;
+    }
+    .certification .certi-item {
+        margin-top: 40px;
+    }
+    .certification .certi-item li {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .certification .certi-item li:last-child {
+        margin-bottom: 0;
+    }
+    .product .slider-container {
+        padding: 0;
+    }
+    .product .product-slider {
+        width: 90000px;
+        height: 320px;
+        left: 0;
+    }
+    .product .product-slider li {
+        width: 100vw;
+        height: 320px;
+        margin-right: 0;
+    }
+    .product .contents-padding {
+        padding-bottom: 0;
+    }
+    .product .move-btn {
+        right: 0;
+    }
+    .product .nums {
+        position: inherit;
+        right: 0;
+        margin-top: 56px;
+    }
+    .product .nums li {
+        margin-right: 16px;
+        margin-left: 0;
+    }
+    .partners .section-title {
+        color: #fff;
+    }
+    .partners .partners-logo {
+        margin-top: 80px;
+    }
+    .partners .partners-logo .partner {
+        height: 23px;
+        width: auto;
+        text-align: left;
+        margin-bottom: 65px;
+    }
+    .partners .partners-logo .partner:last-child {
+        margin-bottom: 40px;
+    }
+    .partners .partners-logo img {
+        height: 23px;
+    }
+    .product.company .product-slider {
+        height: 560px;
+    }
+    .product.company .product-slider li {
+        height: 560px;
+        width: 100vw;
+        margin-right: 0;
+    }
+    .product.company .move-btn {
+        display: inherit;
+    }
+    .more-info {
+        text-align: left;
+    }
+    .more-info .contents-padding {
+        padding: 80px 0;
+    }
+    .blue-btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .footer .left {
+        width: 100%;
+    }
+    .footer .right {
+        width: 100%;
+    }
+    .footer .left img {
+        height: 56px;
+        margin-bottom: 88px;
+    }
+    .footer .right .f-txt.m-blind {
+        display: none;
+    }
+    .footer .right .f-txt .indent {
+        text-indent: 0;
+    }
+    .footer .right .f-txt.copy {
+        margin-top: 16px;
     }
 }
 
