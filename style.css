@@ -763,14 +763,19 @@ textarea {
 /*    height: 2.6vh;*/
     width: 90%;
 }
+.product.company .nums {
+    display: none;
+}
 .product.company .move-btn {
     display: none;
 }
 .product.company .product-slider li {
-    width: 400px;
+    width: 301px;
     margin-right: 12px;
 }
-
+.product.company .product-slider li:last-child {
+    margin-right: 0;
+}
 .product.company .product-slider li:nth-child(1) {
     background-image: url(view01.png);
 }

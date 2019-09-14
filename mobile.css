@@ -167,6 +167,9 @@
     .partners .partners-logo img {
         height: 23px;
     }
+    .product.company .nums {
+        display: inherit;
+    }
     .product.company .product-slider {
         height: 560px;
     }
@@ -369,6 +372,9 @@
     }
     .partners .partners-logo img {
         height: 23px;
+    }
+    .product.company .nums {
+        display: inherit;
     }
     .product.company .product-slider {
         height: 560px;
