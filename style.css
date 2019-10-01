@@ -524,11 +524,11 @@ textarea {
     z-index: 3;
 }
 .slider .box1 {
-    background-image: url(middle-img.jpg);
+    background-image: url(main-02.png);
     z-index: 2
 }
 .slider .box2 {
-    background-image: url(main-03.jpg);
+    background-image: url(main-03.png);
     z-index: 1;
 }
 .dots {
@@ -563,12 +563,11 @@ textarea {
     font-weight: 300;
     margin: 70px auto 80px;
 }
-
 .middle-img {
     height: 560px;
     width: 100%;
     background-size: cover;
-    background-image: url(middle-img.jpg);
+    background-image: url(middle-img.png);
 }
 
 .produce-line .section {
@@ -592,7 +591,13 @@ textarea {
     line-height: 1.4;
     word-break: keep-all;
 }
-.produce-line .section.right {
+.produce-line .section.left .produce-subtxt {
+    font-size: 16px;
+    opacity: 0.4;
+    line-height: 2;
+    margin-top: 24px;
+}
+.produce-line .section.right .produce-subtxt {
     box-sizing: border-box;
     text-align: right;
 }
@@ -639,17 +644,23 @@ textarea {
 .certification {
     background-color: #0c0c0c;
     color: #fff;
+}
+.certification .container {
     position: relative;
+}
+.certification .section-title {
+    color: #fff;
 }
 .certification .certi-item {
     margin-top: 200px;
 }
 .certification .certi-item li {
-    width: 18.5%;
+    width: 224px;
     display: inline-block;
-    margin-right: 1.3%;
+    margin-right: 25px;
     padding-top: 33px;
     border-top: 1px solid #fff;
+    vertical-align: top;
 }
 .certification .certi-item li:last-child {
     margin-right: 0;
@@ -672,7 +683,7 @@ textarea {
 }
 .certification .line-btn {
     position: absolute;
-    right: 13%;
+    right: 0;
     top: 200px;
 }
 .product {
@@ -703,13 +714,13 @@ textarea {
     background-image: url(product01.png);
 }
 .product .product-slider .pro-box1 {
-    background-image: url(product01.png);
+    background-image: url(product02.png);
 }
 .product .product-slider .pro-box2 {
-    background-image: url(product01.png);
+    background-image: url(product03.png);
 }
 .product .product-slider .pro-box3 {
-    background-image: url(product01.png);
+    background-image: url(product04.png);
 }
 .product .nums {
     position: absolute;
