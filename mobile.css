@@ -248,6 +248,9 @@
         top: -32px;
         width: 92px;
     }
+    .main-img .slider .slide-img.box2 {
+        background-position: -370px 0px;
+    }
     .p-br {
         display: none;
     }
