@@ -282,21 +282,40 @@
                         });
                     });
                 });
-            
-                $(function() {
-                  $("#main-img").swipe( {
-                    //Generic swipe handler for all directions
-                    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-                        if (direction == right){
-                            $(".slide-img").animate({opacity : "0"}, 1000);
-                        };
-//                      $(".slide-img").each(function(){
-//                          $(".box"+mainIndex).animate({opacity:"1"}, 1000);
-//                          $(".box"+mainIndex).siblings().animate({opacity:"0"}, 1000);
-//                      });
+                
+                $(".slider").swipe( {
+                    //Single swipe handler for left swipes
+                    swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                        if (mainIndex >= 2) {
+                            return false;
+                        }
+                        mainIndex++;
+                        dotIndex = mainIndex
+                        $(".box"+ mainIndex).animate({opacity:"1"}, 1000);
+                        $(".box"+ mainIndex).siblings().animate({opacity:"0"}, 1000);
+                        $(".dots ."+ dotIndex).addClass("selected");
+                        $(".dots ."+ dotIndex).siblings().removeClass("selected");
                     },
-                      threshold:0
-                  });
+                    //Default is 75px, set to 0 for demo so any distance triggers swipe
+                    threshold:0
+                });
+
+
+                $(".slider").swipe( {
+                    //Single swipe handler for left swipes
+                    swipeRight:function(event, direction, distance, duration, fingerCount) {
+                        if ( mainIndex <= 0) {
+                            return false;
+                        }
+                        mainIndex--;
+                        dotIndex = mainIndex
+                        $(".box"+ mainIndex).animate({opacity:"1"}, 1000);
+                        $(".box"+ mainIndex).siblings().animate({opacity:"0"}, 1000);
+                        $(".dots ."+ dotIndex).addClass("selected");
+                        $(".dots ."+ dotIndex).siblings().removeClass("selected");
+                    },
+                    //Default is 75px, set to 0 for demo so any distance triggers swipe
+                    threshold:0
                 });
                 
                 
