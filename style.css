@@ -764,40 +764,33 @@ textarea {
 }
 .partners .partners-logo .partner {
     display: inline-block;
-    width: 16%;
+    width: 13%;
     margin-right: 4%;
 }
 .partners .partners-logo .partner:last-child {
     margin-right: 0;
+    width: 8%;
 }
 .partners .partners-logo .partner img {
-/*    height: 2.6vh;*/
+    max-height: 40px;
     width: 90%;
 }
-.product.company .nums {
-    display: none;
-}
-.product.company .move-btn {
-    display: none;
-}
-.product.company .product-slider li {
-    width: 301px;
-    margin-right: 12px;
-}
+/*company-view*/
 .product.company .product-slider li:last-child {
     margin-right: 0;
+    background-position: center;
 }
 .product.company .product-slider li:nth-child(1) {
-    background-image: url(view01.png);
+    background-image: url(view01.JPG);
 }
 .product.company .product-slider li:nth-child(2) {
-    background-image: url(view02.png);
+    background-image: url(view02.JPG);
 }
 .product.company .product-slider li:nth-child(3) {
-    background-image: url(view03.png);
+    background-image: url(view03.jpg);
 }
 .product.company .product-slider li:nth-child(4) {
-    background-image: url(view04.png);
+    background-image: url(view04.jpg);
 }
 
 .more-info {
