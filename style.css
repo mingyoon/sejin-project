@@ -406,10 +406,21 @@ textarea {
 .logo {
     width: 107px;
 }
-.menu {
+.menu-div {
     position:absolute;
     right: 40px;
     top: 29px;
+}
+.menu-div a {
+    display: inline-block;
+}
+.menu-div .lang {
+    line-height: 38px;
+    vertical-align: top;
+    margin-right: 24px;
+    font-size: 15px;
+}
+.menu {
     padding: 5px 2px 5px 5px;
     width: 23px;
 }
