@@ -223,9 +223,12 @@
         padding: 19px 20px;
         height: 78px;
     }
-    .menu {
+    .menu-div {
         right: 20px;
         top: 24px;
+    }
+    .menu-div .lang {
+        margin-right: 12px;
     }
     .header .logo {
         width: 100px;
